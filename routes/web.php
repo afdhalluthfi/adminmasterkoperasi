@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PemeringkatanController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -25,9 +26,7 @@ Route::middleware(['auth'])->group(function () {
     Route::get('utama',function(){
         return view('content/utama');
     })->name('utama');
-    Route::get('pemeringkatan',function(){
-        return view('content.pemeringkatan');
-    })->name('pemeringkatan');
+    Route::get('pemeringkatan',[PemeringkatanController::class,'index'])->name('pemeringkatan');
     
 });
 Route::get('/masuk',function(){
