@@ -18,7 +18,7 @@ class PemeringkatanController extends Controller
     public function index () {
         
         $pemeringkatan =$this->ringkatan;
-        // return view('content.pemeringkatan');
-        return $pemeringkatan;
+        return view('content.pemeringkatan',compact('pemeringkatan'));
+        // return $pemeringkatan;
     }
 }
