@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css" />
     <link rel="stylesheet" href="{{ asset('assets/vendor/@fortawesome/fontawesome-free/css/all.min.css') }}" />
     <link rel="stylesheet" href=" {{ asset('assets/styles/tailwind.css') }}" />
+    <link rel="stylesheet" href="{{ asset('css/app.css')}}">
     <title>Dashboard | Notus JS by Creative Tim</title>
 </head>
 
@@ -18,7 +19,7 @@
     <div id="root">
         <x-navside></x-navside>
         <div class="relative md:ml-64 bg-blueGray-50">
-            <nav class="absolute top-0 left-0 w-full z-10  bg-pink-600 md:flex-row md:flex-nowrap md:justify-start flex items-center p-4">
+            <nav class="absolute top-0 left-0 w-full z-10  bg-indigo-600 md:flex-row md:flex-nowrap md:justify-start flex items-center p-4">
                 <div class="w-full mx-autp items-center flex justify-between md:flex-nowrap flex-wrap md:px-10 px-4">
                     <a class="text-white text-sm uppercase hidden lg:inline-block font-semibold" href="./index.html">Dashboard</a>
                     <form class="md:flex hidden flex-row flex-wrap items-center lg:ml-auto mr-3">
